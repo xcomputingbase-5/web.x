@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XTOPro Info</title>
+ <title>XTOPro Info</title>
     <style>
         /* Reset and Base Styles */
         * {
@@ -11,7 +11,7 @@
             box-sizing: border-box;
         }
 
-        body {
+  body {
             font-family: 'Roboto', sans-serif; /* Modern font */
             line-height: 1.6;
             color: #000000; /* Black text for readability */
@@ -19,13 +19,13 @@
             background-size: cover; /* Full-screen background */
         }
 
-        .container {
+ .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
-        /* Header and Navigation */
+ /* Header and Navigation */
         header {
             background: rgba(44, 62, 80, 0.9); /* Semi-transparent for background visibility */
             color: #fff;
@@ -35,13 +35,13 @@
             z-index: 1000;
         }
 
-        nav {
+ nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        nav h1 {
+   nav h1 {
             font-family: 'Montserrat', sans-serif; /* Elegant font for title */
             font-size: 2.2rem;
             font-weight: 700;
@@ -50,14 +50,13 @@
             color: #ffffff;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
-
-        nav ul {
+ nav ul {
             list-style: none;
             display: flex;
             gap: 20px;
         }
 
-        nav ul li a {
+ nav ul li a {
             color: #fff;
             text-decoration: none;
             font-weight: bold;
@@ -65,33 +64,32 @@
             transition: color 0.3s;
         }
 
-        nav ul li a:hover {
+ nav ul li a:hover {
             color: #9b59b6; /* Lovely purple hover */
         }
 
-        /* Sections */
+ /* Sections */
         section {
             padding: 60px 0;
             background: rgba(255, 255, 255, 0.85); /* Semi-transparent white for readability */
             border-radius: 8px;
             margin: 20px 0;
         }
-
         section h1, section h2, section h3, section h4, section h5, section h6 {
             margin-bottom: 20px;
             color: #2c3e50; /* Darker color for headings */
             font-family: 'Montserrat', sans-serif;
         }
 
-        section#intro {
+ section#intro {
             text-align: center;
         }
 
-        section#work, section#about, section#elements, section#contact {
+ section#work, section#about, section#elements, section#contact {
             background: rgba(255, 255, 255, 0.9);
         }
 
-        /* Contact Form */
+  /* Contact Form */
         form {
             display: grid;
             gap: 15px;
@@ -99,7 +97,7 @@
             margin: 0 auto;
         }
 
-        input, textarea, select, button {
+ input, textarea, select, button {
             padding: 10px;
             width: 100%;
             border: 1px solid #ccc;
@@ -108,7 +106,7 @@
             color: #000000;
         }
 
-        button, .button {
+ button, .button {
             background: #6c757d; /* Stylish gray */
             color: #fff;
             border: none;
@@ -122,13 +120,13 @@
             font-weight: 500;
         }
 
-        button:hover, .button:hover {
+ button:hover, .button:hover {
             background: #9b59b6; /* Lovely purple on hover */
             transform: scale(1.05);
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
-        button::after, .button::after {
+ button::after, .button::after {
             content: '';
             position: absolute;
             top: 50%;
@@ -141,50 +139,50 @@
             transition: width 0.5s, height 0.5s;
         }
 
-        button:hover::after, .button:hover::after {
+ button:hover::after, .button:hover::after {
             width: 200px;
             height: 200px;
         }
 
-        button.disabled, .button.disabled {
+ button.disabled, .button.disabled {
             background: #ccc;
             cursor: not-allowed;
             transform: none;
             box-shadow: none;
         }
 
-        /* Elements Styling */
+ /* Elements Styling */
         .elements-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
         }
 
-        .elements-grid > div {
+ .elements-grid > div {
             background: #f9f9f9;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        /* Tables */
+  /* Tables */
         table {
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 20px;
         }
 
-        table {
+table {
             border: 2px solid #6c757d;
         }
 
-        th, td {
+ th, td {
             border: 1px solid #6c757d;
             padding: 10px;
             text-align: left;
         }
 
-        /* Social Icons */
+ /* Social Icons */
         .social-icons a {
             margin: 0 10px;
             color: #6c757d;
@@ -193,27 +191,27 @@
             transition: color 0.3s;
         }
 
-        .social-icons a:hover {
+  .social-icons a:hover {
             color: #9b59b6;
         }
 
-        /* Responsive Design */
+ /* Responsive Design */
         @media (max-width: 768px) {
             nav ul {
                 flex-direction: column;
                 padding-top: 10px;
             }
 
-            li {
+  li {
                 padding-bottom: 10px;
             }
 
-            .elements-grid {
+ .elements-grid {
                 grid-template-columns: auto;
             }
         }
 
-        /* Footer */
+   /* Footer */
         footer {
             background: rgba(44, 62, 80, 0.9);
             color: #fff;
